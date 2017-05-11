@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let path = Bundle.main.path(forResource: "btn", ofType: "wav")
+        let path = Bundle.main.path(forResource: "space", ofType: "wav")
         let soundURL = URL(fileURLWithPath: path!)
         
         do {
@@ -82,6 +82,15 @@ class ViewController: UIViewController {
         btnSound.play()
     }
     
+    @IBAction func pressClear(_ sender: Any) {
+        
+        playSound()
+        
+        currentOperation = Operation.Empty
+        
+        outputLbl.text = "0"
+        
+    }
     func processOperation(operation:Operation) {
         if currentOperation != Operation.Empty {
             

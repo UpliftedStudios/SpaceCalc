@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="bF6-yV-suZ">
-                                <rect key="frame" x="0.0" y="483" width="320" height="85"/>
+                                <rect key="frame" x="0.0" y="496" width="320" height="72"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="hiw-2k-Guf">
                                 <rect key="frame" x="18" y="39" width="284" height="71"/>
@@ -240,9 +240,12 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsF-sG-nHW">
-                                <rect key="frame" x="66" y="493" width="185" height="65"/>
+                                <rect key="frame" x="66" y="456" width="185" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="pressClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ReO-aB-cDx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -256,7 +259,6 @@
                             <constraint firstItem="oF8-s7-WL3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Oge-mZ-wLl"/>
                             <constraint firstItem="Vsf-9t-6cf" firstAttribute="top" secondItem="hiw-2k-Guf" secondAttribute="bottom" constant="10" id="TaA-jv-ZMC"/>
                             <constraint firstAttribute="trailing" secondItem="bF6-yV-suZ" secondAttribute="trailing" id="Ugn-Nz-ksC"/>
-                            <constraint firstItem="bF6-yV-suZ" firstAttribute="top" secondItem="Vsf-9t-6cf" secondAttribute="bottom" constant="35" id="XMN-E2-jgQ"/>
                             <constraint firstAttribute="trailing" secondItem="oF8-s7-WL3" secondAttribute="trailing" id="XaX-jm-zpE"/>
                             <constraint firstItem="vSP-ar-yJs" firstAttribute="trailing" secondItem="hiw-2k-Guf" secondAttribute="trailing" constant="-12" id="ZCx-Zr-SC8"/>
                             <constraint firstItem="Vsf-9t-6cf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-16" id="cGp-Sw-M3D"/>
